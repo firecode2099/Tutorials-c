@@ -1,43 +1,30 @@
-//Prueba de sort
 #include<stdio.h>
+/*
+-----------------
+maratb1@gmail.com
+
+Array Bidimentional -C
+--------------
+*/
 
 int main(){
 
-
-printf("hola c de nuevo\n");
-
-//array de enteros
-int x[]={5,4,1};
+int j,i;
 
 
-
-if(x[0]>x[1] && x[0]>x[2]){
-
-
-printf("los numeros son :%i \n", x[2] );
+int x[3][3]={{11,44,55},{22,66,40}};
 
 
+for(j=0;j<2;j++){
+        printf("\n");
 
+     for(i=0;i<3;i++){
+
+        printf("%i ",x[j] [i]);
+
+     }
 }
 
-if(x[1]<x[0] && x[1]>x[2]){
-
-
-printf("los numeros son :%i \n", x[1] );
-
-
-
-}
-
-
-if(x[2]<x[1] && x[2]<x[0]){
-
-
-printf("los numeros son :%i \n", x[0] );
-
-
-
-}
 
 return 0;
 }
