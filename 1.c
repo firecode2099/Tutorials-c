@@ -18,7 +18,7 @@ int main()
  //Open and write
  f=fopen("t.txt","w");
  //string to write file
- fprintf(f, "%s","Cathy");
+ fprintf(f, "%s","Hello file");
 
  //close
  fclose(f);
