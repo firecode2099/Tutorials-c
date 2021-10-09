@@ -1,30 +1,30 @@
 #include<stdio.h>
-/*
------------------
-maratb1@gmail.com
+#include <stdlib.h>
 
-Array Bidimentional -C
---------------
+/*
+-----------------------
+-create file
+-write on
+-close file
+----------------------
 */
 
-int main(){
 
-int j,i;
+int main()
+{
+//create pointer
+ FILE *f;
 
+ //Open and write
+ f=fopen("t.txt","w");
+ //string to write file
+ fprintf(f, "%s","Cathy");
 
-int x[3][3]={{11,44,55},{22,66,40}};
+ //close
+ fclose(f);
 
-
-for(j=0;j<2;j++){
-        printf("\n");
-
-     for(i=0;i<3;i++){
-
-        printf("%i ",x[j] [i]);
-
-     }
-}
-
+ //print by screen we that write file
+ printf(" file created");
 
 return 0;
 }
